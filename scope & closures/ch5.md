@@ -258,7 +258,7 @@ for (var i=1; i<=5; i++) {
 		var j = i;
 		setTimeout( function timer(){
 			console.log( j );
-		}, j*1000 );
+		}, i*1000 );
 	})();
 }
 ```
@@ -272,7 +272,7 @@ for (var i=1; i<=5; i++) {
 	(function(j){
 		setTimeout( function timer(){
 			console.log( j );
-		}, j*1000 );
+		}, i*1000 );
 	})( i );
 }
 ```
